@@ -9,12 +9,14 @@ This project introduces a AI-Gateway that puts a security layer over inference o
 ## Workflow
 The project has two major components, API layer and a Validation model. The API layer intercepts the request from the user to the Model, and using Validation model it validates the given prompt from the user for mallicious input. The validation layer passes the request to the target model for inference if the given prompt is safe as inference input. If validation model finds the input prompt as treat in terms of vairous aspects of prompt-attack, it will block the request, safeguarding the target model.
 
+For Core Validator Model, Llama 4 Scout will be used. The Llam model will be fine-tunned an custom trained to validate mallicious prompt. The first phase targets validation of mallicious text prompt, with the possibility to identify other form of mallicious prompt inputs.
+
 
 ## Architecture
 
 The project is divided into two major modules:
 - AI-Gateway API layers
-- Validator Model
+- Core Validator Model
 
 ## 
 
