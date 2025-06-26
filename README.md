@@ -16,7 +16,10 @@ For Core Validator Model, Llama 4 Scout will be used. The Llam model will be fin
 
 The project is divided into two major modules:
 - AI-Gateway API layers
-- Core Validator Model
+- Core Validator Model 
+
+### Core Validator Model 
+Llama 4 Scout Model will be used, custom trained and fine-tuned to validate a prompt for Mallicious context.
 
 ## 
 
