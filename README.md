@@ -12,14 +12,19 @@ The project has two major components, API layer and a Validation model. The API 
 For Core Validator Model, Llama 4 Scout will be used. The Llam model will be fine-tunned an custom trained to validate mallicious prompt. The first phase targets validation of mallicious text prompt, with the possibility to identify other form of mallicious prompt inputs.
 
 
+
 ## Architecture
 
 The project is divided into two major modules:
 - AI-Gateway API layers
 - Core Validator Model 
 
+### AI-Gateway API layers
+AI-Gateway has an exposed API, that intercepts the prompt to the target model and uses Core Valiator Model to check for mallicious prompts.
+
 ### Core Validator Model 
 Llama 4 Scout Model will be used, custom trained and fine-tuned to validate a prompt for Mallicious context.
+Using Sloth to train the Core model of AI-Gateway
 
 ## 
 
