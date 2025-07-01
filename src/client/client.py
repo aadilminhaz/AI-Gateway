@@ -1,6 +1,7 @@
 ##Client to call target model, with given promt and response with the response from the model
 import httpx
 
+#Base_URL will be coming from env/config file
 BASE_URL = "http://localhost:8000"  # URL to call the target model endpoint
 
 async def forward_request_to_my_api(endpoint: str, method="GET", payload=None):
