@@ -15,6 +15,7 @@ TO-DO:
 Phase 0: Basic setup with an Interface that exposes AI-Gateway's API to recieve the user prompt, and forward it the the taget model by calling the target model inference API.
 - Test the AI-Gateway API
 - Connect the API to the service layer
+- Sketch out Global Exception Handling and Logging
 - Call Client layer from service layer, to foward the request to target model inference API
 
 
