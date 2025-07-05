@@ -18,6 +18,11 @@ Phase 0: Basic setup with an Interface that exposes AI-Gateway's API to recieve 
 - Sketch out Global Exception Handling and Logging
 - Call Client layer from service layer, to foward the request to target model inference API
 
+Phase 1: Model Implementation
+- Basic model loading and inferencing
+- Writing service layer to connect with model inferencing
+- Connecting AI-Gateway to service, to vaidate the prompt
+
 
 
 ## Architecture
