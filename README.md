@@ -11,7 +11,7 @@ The project has two major components, API layer and a Validation model. The API 
 
 For Core Validator Model, Llama 4 Scout will be used. The Llam model will be fine-tunned an custom trained to validate mallicious prompt. The first phase targets validation of mallicious text prompt, with the possibility to identify other form of mallicious prompt inputs.
 
-TO-DO:
+## TO-DO:
 Phase 0: Basic setup with an Interface that exposes AI-Gateway's API to recieve the user prompt, and forward it the the taget model by calling the target model inference API.
 - Test the AI-Gateway API
 - Connect the API to the service layer
@@ -22,6 +22,10 @@ Phase 1: Model Implementation
 - Basic model loading and inferencing
 - Writing service layer to connect with model inferencing
 - Connecting AI-Gateway to service, to vaidate the prompt
+
+
+For fine-tuning the validation model, we need to find relavant dataset, here are some curation to find the required dataset:
+- https://arxiv.org/abs/2402.13064
 
 
 
