@@ -4,3 +4,4 @@ routes
 transformers 
 torch
 httpx
+accelerate

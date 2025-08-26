@@ -4,6 +4,7 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
+
 # Load model and tokenizer - assuming Llama 4 Scout is hosted on Hugging Face
 model_name = "meta-llama/Meta-Llama-4-Scout"  # Replace with the correct model name if different
 
