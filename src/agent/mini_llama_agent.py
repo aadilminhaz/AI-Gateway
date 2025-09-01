@@ -4,7 +4,6 @@ from huggingface_hub import login
 
 print ('Fine Tunning')
 
-login(token="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") 
 print('Logged in...')
 
 # Gemma 2B model (small and efficient)
