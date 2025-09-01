@@ -44,6 +44,11 @@ The project is divided into two major modules:
 - AI-Gateway API layers
 - Core Validator Model 
 
+### Datasets
+- https://huggingface.co/datasets/deepset/prompt-injections/viewer/default/train?row=1&views%5B%5D=train
+- https://huggingface.co/datasets/xTRam1/safe-guard-prompt-injection
+- https://huggingface.co/datasets/jayavibhav/prompt-injection/viewer/default/train?p=1
+
 ### AI-Gateway API layers
 AI-Gateway has an exposed API, that intercepts the prompt to the target model and uses Core Valiator Model to check for mallicious prompts.
 
