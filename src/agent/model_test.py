@@ -2,7 +2,6 @@ from transformers import pipeline
 import torch
 from huggingface_hub import login
 
-login(token="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") 
 
 model_id = "meta-llama/Llama-4-Scout-17B-16E"
 
