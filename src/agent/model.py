@@ -6,7 +6,7 @@ import torch
 
 
 # Load model and tokenizer - assuming Llama 4 Scout is hosted on Hugging Face
-model_name = "meta-llama/Meta-Llama-4-Scout"  # Replace with the correct model name if different
+model_name = "meta-llama/Llama-4-Scout-17B-16E"  # Replace with the correct model name if different
 
 print("Loading tokenizer...")
 tokenizer = AutoTokenizer.from_pretrained(model_name)
