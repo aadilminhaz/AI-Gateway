@@ -2,7 +2,7 @@
 
 def validatePrompt(prompt: str) -> bool:
 
-    isValid = False
+    isValid = True
     ## Load the trained model
 
     ## Check for the prompt

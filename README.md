@@ -37,6 +37,7 @@ For fine-tuning the validation model, we need to find relavant dataset, here are
 - https://arxiv.org/abs/2402.13064
 
 
+> pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
 
 ## Architecture
 
