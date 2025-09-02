@@ -1,7 +1,8 @@
 from openai import OpenAI
+from src.config.settings import settings
 
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=settings.open_ai_key)
 model = "gpt-5"
 
 def inference(prompt: str) -> str:

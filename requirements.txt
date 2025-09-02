@@ -8,3 +8,4 @@ accelerate
 openai
 ollama
 pydantic
+pydantic-settings
