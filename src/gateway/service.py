@@ -1,29 +1,26 @@
-#from src.client.client import inference
 from src.client.ollamaClient import inference
 from src.agent.validatorAgent import validatePrompt
+from src.gateway.inferenceModels import InferenceRequest
 from fastapi import HTTPException
 
-def gateway_service(prompt: str) -> str:
+def gateway_service(inferenceRequest: InferenceRequest) -> str:
     #call validator Model
-
-    if (call_validator(prompt = prompt) == False):
-        return {"message" : "Mallicious Input"}
+    if (call_validator(prompt = inferenceRequest.prompt) == False):
+        raise HTTPException(status_code=400, detail="Mallicious Input to LLM")
     
     ##call target model client
-    return call_target_model(prompt=prompt)
+    return call_target_model(prompt= inferenceRequest.prompt)
 
 
 def call_validator(prompt: str) -> bool:
-    ## call validator model
-    ## create an ollama client to validator model
     return validatePrompt(prompt=prompt)
 
 def call_target_model(prompt: str):
     ##create an ollama client to target model   
-    ##return {"message" : "response from target model"}
     try:
+        print('promt to target model : ', prompt)
         return inference(prompt=prompt)
-        #return {"message" : "Sample response from Target LLM"}
+        #return "Sample response from Target LLM"
     except:
         raise HTTPException(status_code=500, detail="Exception from Target Model")
     

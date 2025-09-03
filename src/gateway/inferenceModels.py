@@ -5,5 +5,7 @@ class InferenceRequest(BaseModel):
     targetId: str
 
 
+class InferenceResponse(BaseModel):
+    response: str
 
 

@@ -1,14 +1,14 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 from huggingface_hub import login
+from src.config.settings import settings
 
 print ('Fine Tunning')
 
 print('Logged in...')
 
-# Gemma 2B model (small and efficient)
-#model_id = "google/gemma-2b-it"
-#model_id = "meta-llama/Llama-4-Scout-17B-16E"
+login(token=settings.huggingface_key)
+
 model_id="meta-llama/Llama-2-7b-chat-hf"
 
 
