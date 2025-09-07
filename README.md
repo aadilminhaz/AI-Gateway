@@ -26,7 +26,13 @@ A pre-tranined and fine-tuned model(s) (multiple to support Multimodal) should b
 > ollama pull llama3.2
 > ollama run llama3.2
 
-#### Run the project
+#### Run the project using Docker
+- Build the image
+> docker build -f Dockerfile -t ai-gateway:v1 .
+- Run the image
+> 
+
+#### Run the project without Docker
 - Run the project
 > uvicorn main:app --reload
 - AI-Gateway will be up on http://127.0.0.1:8000, our inference API is available at http://127.0.0.1:8000/inference
